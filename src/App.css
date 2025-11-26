@@ -154,6 +154,7 @@ a.inline-link {
     margin-bottom: 2rem;
     border-bottom: 1px solid var(--arcadian-border);
     padding: 0;
+    position: relative; /* for sliding tab indicator */
 }
 
 .tab-button {
@@ -164,9 +165,12 @@ a.inline-link {
     font-size: 0.875rem;
     font-weight: 600;
     color: var(--arcadian-secondary);
-    border-bottom: 4px solid transparent;
-    transition: all 0.2s ease;
+
+    transition: color 0.2s ease, transform 0.1s;
     white-space: nowrap;
+
+    position: relative;
+    z-index: 20;
 }
 
 
@@ -174,9 +178,24 @@ a.inline-link {
     border-bottom-color: rgba(79, 189, 186, 0.5); 
 }
 
+.tab-button:hover:not(.active) {
+    color: var(--arcadian-dark);
+}
+
 .tab-button.active {
     color: var(--arcadian-dark);
-    border-bottom-color: var(--arcadian-primary);
+}
+
+.tab-indicator {
+    position: absolute;
+    bottom: -1px;
+    height: 4px;
+    background-color: var(--arcadian-primary);
+    border-radius: 9999px;
+    z-index: 10;
+    transition: 
+        left 0.4s cubic-bezier(0.68, -0.6, 0.32, 1.6), 
+        width 0.4s cubic-bezier(0.68, -0.6, 0.32, 1.6); 
 }
 
 /* SCROLL BAR STYLING */
