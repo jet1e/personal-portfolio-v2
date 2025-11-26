@@ -51,9 +51,9 @@ a.inline-link {
     color: var(--arcadian-dark);
 }
 
-.hidden {
+/* .hidden {
     display: none !important;
-}
+} */
 
 /* TODO: SECTION INCOMPLETE */
 
@@ -200,9 +200,9 @@ a.inline-link {
 
 /* SCROLL BAR STYLING */
 .scrollable-content {
-    max-height: 70vh; /* max-height: 70vh */
-    overflow-y: auto;
-    padding-right: 0.5rem; /* Add some padding to avoid content touching scrollbar */
+    max-height: 70vh; 
+    overflow-y: scroll;
+    padding-right: 0.5rem; 
 }
 
 /* Custom Scrollbar Styling (Webkit only) */
@@ -214,12 +214,24 @@ a.inline-link {
     border-radius: 10px;
 }
 .scrollable-content::-webkit-scrollbar-track {
-    background: var(--arcadian-border);
+    background: white;
 }
 
 /* ------------- */
 /* MAIN SECTIONS */
 /* ------------- */
+.portfolio-section-wrapper {
+    transition: max-height 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94), 
+                opacity 0.8s ease-in-out; 
+    max-height: 0; 
+    opacity: 0;
+    overflow: hidden; 
+}
+
+.portfolio-section-wrapper.active-section {
+    max-height: 2000px; 
+    opacity: 1;
+}
 
 .portfolio-section {
     padding-bottom: 1rem;

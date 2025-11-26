@@ -45,7 +45,7 @@ const Footer = () => (
 
 const About = () => (
   <section id="about" className="portfolio-section">
-        <h3 className="section-title"> Hi there! <span className="wave">👋</span></h3>
+        <h3 className="section-title"> Hi there <span className="wave">👋</span></h3>
         <p className="section-text">I am a final-year Honours Comp-Sci student in Perth, Australia. I am fascinated by large-scale, high impact products and research and have many industry and research related experiences.</p>
 
         <h3 className="section-title sub-title">Education</h3>
@@ -82,16 +82,53 @@ const renderSection = (activeTab) => {
   }
 };
 
+//Wrapper for smooth tab transitions
+const getSectionClassName = (sectionId, activeTab) => {
+    if (sectionId === activeTab) {
+        return "portfolio-section-wrapper active-section";
+    }
+    return "portfolio-section-wrapper";
+};
+
+
 export default function App() {
   const [activeTab, setActiveTab] = useState('about')
-  // TODO: useEffect hook
-
   return (
         <div className="card-container">
             <Header />
             <Navigation activeTab={activeTab} onTabChange={setActiveTab} />
             <main className="scrollable-content">
-                {renderSection(activeTab)}
+                
+                {/* About Section */}
+                <div className={getSectionClassName('about', activeTab)}>
+                  <About />
+                </div>
+                
+                {/* Experience Section */}
+                <div className={getSectionClassName('experience', activeTab)}>
+                  <Experience />
+                </div>
+                
+                {/* Projects Section */}
+                <div className={getSectionClassName('projects', activeTab)}>
+                  <Projects />
+                </div>
+                
+                {/* Research Section */}
+                <div className={getSectionClassName('research', activeTab)}>
+                  <section id="research" className="portfolio-section">
+                      <h3 className="section-title">Research</h3>
+                      <p>Content coming soon.</p>
+                  </section>
+                </div>
+                
+                {/* Contact Section */}
+                <div className={getSectionClassName('contact', activeTab)}>
+                    <section id="contact" className="portfolio-section">
+                      Contact me at <a href="mailto:jet05le@gmail.com" className="primary-text link-style"> jet05le@gmail.com</a>!
+                    </section>
+                </div>
+                
             </main>
             <Footer />
         </div>
