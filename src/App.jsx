@@ -1,35 +1,99 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import { useState } from "react";
+import './App.css';
+import Navigation from "./components/Navigation";
+import { educationData} from './data';
+import Experience from './components/Experience';
+import Projects from './components/Projects';
 
-function App() {
-  const [count, setCount] = useState(0)
+// HEADER AND FOOTER AND LANDING SECTIONS
+const Header = () => (
+  <header className="profile-header">
+        {/* HEADING */}
+        <div className="profile-info-group">
+            {/* Replace this with your actual image path in the public folder */}
+            <img src="https://drive.google.com/uc?export=view&id=1HfWiKqi28k7CSClklzXEVEAYz_Q__gga" alt="Image of Jet Le" className="profile-image" height="80" />
+            <div>
+                <h1 className="profile-name">Jet Le</h1>
+                <p className="profile-title">Research & Software Engineer todo</p>
+            </div>
+        </div>
+
+        {/* SOCIAL MEDIA */}
+        <div className="social-media-summary">
+            <div className="social-media-box border-separator">
+                <a href="https://github.com/jet1e" className="social-media-icon">
+                    <ion-icon name="logo-github"></ion-icon>
+                </a>
+                <p className="social-media-label">GitHub</p>
+            </div>
+            <div className="social-media-box">
+                <a href="https://www.linkedin.com/in/jet-1e/" className="social-media-icon">
+                    <ion-icon name="logo-linkedin"></ion-icon>
+                </a>
+                <p className="social-media-label">LinkedIn</p>
+            </div>
+        </div>
+    </header>
+);
+
+const Footer = () => (
+  <footer className="main-footer">
+        <p className="contact-info">Contact: <a href="mailto:jet05le@gmail.com" className="primary-text link-style">jet05le@gmail.com</a></p>
+        <p className="copyright">&copy; 2025 J. Le. All Rights Reserved.</p>
+  </footer>
+);
+
+const About = () => (
+  <section id="about" className="portfolio-section">
+        <h3 className="section-title"> Hi there! <span className="wave">👋</span></h3>
+        <p className="section-text">I am a final-year Honours Comp-Sci student in Perth, Australia. I am fascinated by large-scale, high impact products and research and have many industry and research related experiences.</p>
+
+        <h3 className="section-title sub-title">Education</h3>
+        <div className="edu-grid">
+            {educationData.map((edu, index) => (
+                <div key={index} className="edu-card">
+                    <p className="edu-place">{edu.place}</p>
+                    <p className="edu-title primary-text">{edu.title}</p>
+                    <p className="edu-about">{edu.about}</p>
+                </div>
+            ))}
+        </div>
+
+        <h3 className="section-title sub-title">Tech-Stack</h3>
+    </section>
+);
+
+// MAIN APP
+const renderSection = (activeTab) => {
+  switch (activeTab) {
+    case 'about':
+      return <About />;
+    case 'experience':
+      return <Experience />;
+    case 'projects':
+      return <Projects />;
+    case 'research':
+      // TODO: Placeholder for now
+      return <section id="research" className="portfolio-section"><h3 className="section-title">Research</h3><p>Content coming soon.</p></section>;
+    case 'contact':
+        return <section id="contact" className="portfolio-section">Contact me at <a href="mailto:jet05le@gmail.com" className="primary-text link-style"> jet05le@gmail.com</a>!</section>;
+    default:
+        return <About />; // Default to 'about'
+  }
+};
+
+export default function App() {
+  const [activeTab, setActiveTab] = useState('about')
+  // TODO: useEffect hook
 
   return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
+        <div className="card-container">
+            <Header />
+            <Navigation activeTab={activeTab} onTabChange={setActiveTab} />
+            <main className="scrollable-content">
+                {renderSection(activeTab)}
+            </main>
+            <Footer />
+        </div>
+    );
 }
-
-export default App
