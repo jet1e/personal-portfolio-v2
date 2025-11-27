@@ -31,19 +31,19 @@ export const projectData = [
         title: "Connect Four",
         description: "Group project creating a fullstack application with turn-based and AI modes. Progress is saved via Firebase.",
         tag: "Kotlin",
-        githubUrl: "#", // Replace with actual link
+        githubUrl: "https://github.com/jet1e/ConnectFourApp", // Replace with actual link
     },
     {
         title: "Sudoku Solution Validator",
         description: "Multithreaded solution validator for n x n grid.",
         tag: "C89",
-        githubUrl: "#",
+        githubUrl: "https://github.com/jet1e/Multithreaded_SSV",
     },
     {
         title: "Crossy Road Terminal Game",
         description: "Turn-based cross the road game using w,a,s,d.",
         tag: "C89",
-        githubUrl: "#",
+        githubUrl: "https://github.com/jet1e/ucp-a1",
     },
 ]
 
@@ -70,10 +70,10 @@ export const educationData = [
 export const researchData = [
     {
         title: 'Privacy-preserving Gait Analysis',
-        url: '#',
+        url: 'https://www.csiro.au/en/',
         supervisor: 'Dr. Tom Gedeon and CSIRO',
-        date: 'Jan 2025 - Present',
-        description: 'Awarded the CSIRO Next Generation Graduate program.',
+        date: 'Commencing January 2026',
+        description: 'Awarded the CSIRO Next Generation Graduate program to research the following: "The rising global elderly population requires innovative and proactive solutions to better monitor this vulnerable demographic, particularly for fall detection, which remains a leading cause of injury. At present, continuous gait analysis using sensors offers a powerful medium to predict and detect falls; consequently, these technologies lead to severe privacy concerns when collecting sensitive personal health data with little to no labelled data. This is further challenged by the concept of the privacy-utility trade-off, where, over-generalisation risks data loss, severely impacting fall detection accuracy. This research aims to develop a real-time privacy-preserving gait analysis framework to anonymise older adults living independently whilst preserving enough data to detect falls. This will be achieved through using modern privacy techniques such as federated learning and on-device anonymisation.".',
         tag: 'Computer Vision',
         paperUrl: 'https://www.csiro.au/en/work-with-us/funding-programs/funding/next-generation-graduates-programs/awarded-programs/towards-ai-on-the-edge',
     },
@@ -84,6 +84,6 @@ export const researchData = [
         date: 'Feb 2024 - Oct 2024',
         description: 'I conducted a systematic review on the effectiveness of unsupervised machine learning methods (KNN, K-Mean, K-Medoids, DBSCAN) in a semi-supervised setting on 10+ million network traffic data from the Curtin University Gateway. Models were created in Python, using Sci-Kit and C++.',
         tag: 'ML',
-        paperUrl: 'https://www.csiro.au/en/work-with-us/funding-programs/funding/next-generation-graduates-programs/awarded-programs/towards-ai-on-the-edge',
+        paperUrl: 'https://ieeexplore.ieee.org/document/11012045',
     },
 ];

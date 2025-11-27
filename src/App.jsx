@@ -12,10 +12,10 @@ const Header = () => (
         {/* HEADING */}
         <div className="profile-info-group">
             {/* Replace this with your actual image path in the public folder */}
-            <img src="https://drive.google.com/uc?export=view&id=1HfWiKqi28k7CSClklzXEVEAYz_Q__gga" alt="Image of Jet Le" className="profile-image" height="80" />
+            <img src="https://drive.google.com/thumbnail?id=1HfWiKqi28k7CSClklzXEVEAYz_Q__gga&sz=w2000" alt="Image of Jet Le" className="profile-image" height="80" />
             <div>
                 <h1 className="profile-name">Jet Le</h1>
-                <p className="profile-title">Research & Software Engineer todo</p>
+                <p className="profile-title">Software Engineer & Honours Student</p>
             </div>
         </div>
 
