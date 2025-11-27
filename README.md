@@ -7,5 +7,10 @@ Navigate to this forked directory and run ```npm install```.
 
 To run locally use ```npm run dev```.
 
+## Features coming
+- Change theme
+- Background
+- Terminal-like about (Maybe)
+
 ## Credits
 - Icons8
