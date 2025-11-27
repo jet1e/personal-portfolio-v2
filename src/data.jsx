@@ -66,3 +66,24 @@ export const educationData = [
         about: "Peer Support Leader, House Prefect (WB), 2016-2022 Honour Roll for Attitude and Excellence, Academic Honour Society, 1st Basketball, 1st Badminton, PSA/ACC Athlete, Harry Campbell Pope and Instrumental Scholarship (Piano) (2016)",
     },
 ];
+
+export const researchData = [
+    {
+        title: 'Privacy-preserving Gait Analysis',
+        url: '#',
+        supervisor: 'Dr. Tom Gedeon and CSIRO',
+        date: 'Jan 2025 - Present',
+        description: 'Awarded the CSIRO Next Generation Graduate program.',
+        tag: 'Computer Vision',
+        paperUrl: 'https://www.csiro.au/en/work-with-us/funding-programs/funding/next-generation-graduates-programs/awarded-programs/towards-ai-on-the-edge',
+    },
+        {
+        title: 'Unsupervised Machine Learning applied to Intrusion Detection',
+        url: '#',
+        supervisor: 'Dr. Mihai Lazarescu',
+        date: 'Feb 2024 - Oct 2024',
+        description: 'I conducted a systematic review on the effectiveness of unsupervised machine learning methods (KNN, K-Mean, K-Medoids, DBSCAN) in a semi-supervised setting on 10+ million network traffic data from the Curtin University Gateway. Models were created in Python, using Sci-Kit and C++.',
+        tag: 'ML',
+        paperUrl: 'https://www.csiro.au/en/work-with-us/funding-programs/funding/next-generation-graduates-programs/awarded-programs/towards-ai-on-the-edge',
+    },
+];

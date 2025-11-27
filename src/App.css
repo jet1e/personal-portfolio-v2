@@ -334,6 +334,12 @@ a.inline-link {
     margin-top: 0.5rem;
 }
 
+.job-company:hover {
+    text-decoration: none;
+    color: var(--arcadian-dark);
+    transition: color 0.2s ease;
+}
+
 /* PROJECTS SECTION */
 .projects-grid {
     display: grid;
@@ -401,6 +407,82 @@ a.inline-link {
     transition: color 0.2s ease;
 }
 
+/* RESEARCH SECTION */
+.research-list {
+    margin-bottom: 2rem;
+    padding-bottom: 1rem;
+}
+
+.research-item {
+    padding: 1rem;
+    border: 1px solid var(--arcadian-border);
+    border-radius: 0.5rem;
+    margin-bottom: 1.5rem;
+    transition: box-shadow 0.2s ease;
+}
+
+.research-item:hover {
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.05);
+}
+
+.research-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.research-supervisor {
+    color: var(--arcadian-primary);
+}
+
+.research-title {
+    font-size: 1.125rem; 
+    font-weight: 700;
+    color: var(--arcadian-dark);
+}
+
+.research-date {
+    font-size: 0.875rem;
+    color: var(--arcadian-secondary);
+    font-style: italic;
+    margin-top: 0.25rem;
+}
+
+.research-desc {
+    font-size: 0.9rem;
+    color: var(--arcadian-secondary);
+    margin-top: 0.5rem;
+}
+
+.research-footer {
+    margin-top: 0.75rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.research-tag {
+    font-size: 0.75rem;
+    font-weight: 600;
+    padding: 0.25rem 0.75rem;
+    border-radius: 9999px; 
+}
+
+.research-tag.primary-bg {
+    background-color: var(--arcadian-dark);
+    color: white;
+}
+
+.research-link:hover {
+    text-decoration: none;
+    color: var(--arcadian-dark);
+    transition: color 0.2s ease;
+}
+.research-supervisor:hover {
+    text-decoration: none;
+    color: var(--arcadian-dark);
+    transition: color 0.2s ease;
+}
 /* FOOTER STYLING */
 .main-footer {
     margin-top: 2rem;

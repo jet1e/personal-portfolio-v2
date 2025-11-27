@@ -4,6 +4,7 @@ import Navigation from "./components/Navigation";
 import { educationData} from './data';
 import Experience from './components/Experience';
 import Projects from './components/Projects';
+import Research from "./components/Research";
 
 // HEADER AND FOOTER AND LANDING SECTIONS
 const Header = () => (
@@ -74,7 +75,7 @@ const renderSection = (activeTab) => {
       return <Projects />;
     case 'research':
       // TODO: Placeholder for now
-      return <section id="research" className="portfolio-section"><h3 className="section-title">Research</h3><p>Content coming soon.</p></section>;
+      return <Research />;
     case 'contact':
         return <section id="contact" className="portfolio-section">Contact me at <a href="mailto:jet05le@gmail.com" className="primary-text link-style"> jet05le@gmail.com</a>!</section>;
     default:
@@ -116,10 +117,7 @@ export default function App() {
                 
                 {/* Research Section */}
                 <div className={getSectionClassName('research', activeTab)}>
-                  <section id="research" className="portfolio-section">
-                      <h3 className="section-title">Research</h3>
-                      <p>Content coming soon.</p>
-                  </section>
+                  <Research />
                 </div>
                 
                 {/* Contact Section */}
