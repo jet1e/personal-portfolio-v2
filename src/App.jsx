@@ -47,8 +47,7 @@ const Footer = () => (
 const About = () => (
   <section id="about" className="portfolio-section">
         <h3 className="section-title"> Hi there <span className="wave">👋</span></h3>
-        <p className="section-text">I am a final-year Honours Comp-Sci student in Perth, Australia. I am fascinated by large-scale, high impact products and research and have many industry and research related experiences.</p>
-
+        <p className="section-text">I’m a final-year Bachelor of Advanced Science Honours student in Perth. I am fascinated by large-scale, high-impact R&D work with many industry and research experiences across a wide range of challenges. Currently, I have received a scholarship for the CSIRO’s Next Generation Graduates Program (NGGP) and am researching privacy-preserving methods for elderly fall detection.</p>
         <h3 className="section-title sub-title">Education</h3>
         <div className="edu-grid">
             {educationData.map((edu, index) => (

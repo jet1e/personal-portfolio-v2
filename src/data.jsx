@@ -1,5 +1,5 @@
 //----------
-// Static data content
+// Static data content (I put the first page data however in App.jsx)
 //----------
 
 export const experienceData = [
@@ -69,7 +69,7 @@ export const educationData = [
 
 export const researchData = [
     {
-        title: 'Privacy-preserving Gait Analysis',
+        title: 'Privacy-Preserving Elderly Gait Analysis',
         url: 'https://www.csiro.au/en/',
         supervisor: 'Dr. Tom Gedeon and CSIRO',
         date: 'Commencing January 2026',
@@ -78,12 +78,12 @@ export const researchData = [
         paperUrl: 'https://www.csiro.au/en/work-with-us/funding-programs/funding/next-generation-graduates-programs/awarded-programs/towards-ai-on-the-edge',
     },
         {
-        title: 'Unsupervised Machine Learning applied to Intrusion Detection',
-        url: '#',
+        title: 'Unsupervised Machine Learning Applied to Intrusion Detection',
+        url: 'https://staffportal.curtin.edu.au/staff/profile/view/mihai-lazarescu-5a82be19/',
         supervisor: 'Dr. Mihai Lazarescu',
         date: 'Feb 2024 - Oct 2024',
-        description: 'I conducted a systematic review on the effectiveness of unsupervised machine learning methods (KNN, K-Mean, K-Medoids, DBSCAN) in a semi-supervised setting on 10+ million network traffic data from the Curtin University Gateway. Models were created in Python, using Sci-Kit and C++.',
-        tag: 'ML',
+        description: 'I conducted a systematic review on the effectiveness of unsupervised machine learning methods (KNN, K-Mean, K-Medoids, DBSCAN) in a semi-supervised setting on 10+ million network traffic data from the Curtin University Gateway. Models were created in Python, using Sci-Kit and C++. My findings was co-submitted to the 13th International Symposium on Digital Forensics and Security as well as co-authored in the IEEE, "On the Application of Fundamental Clustering Methods to Large Scale Cyber Security Log Classification".',
+        tag: 'Unsupervised ML',
         paperUrl: 'https://ieeexplore.ieee.org/document/11012045',
     },
 ];

@@ -6,3 +6,6 @@ This is the final version of my portfolio website done in React and Vite. This w
 Navigate to this forked directory and run ```npm install```.
 
 To run locally use ```npm run dev```.
+
+## Credits
+- Icons8
