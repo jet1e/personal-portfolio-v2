@@ -1,6 +1,25 @@
 //----------
 // Static data content (I put the first page data however in App.jsx)
 //----------
+export const educationData = [
+    {
+        place: "Curtin University",
+        title: "Bachelors of Advanced Science (Honours), Computing",
+        about: (
+            <>
+                Current CSIRO Next Generation Graduate Scholarship recipient researching privacy-preserving fall detection. Co-authored in the{" "}
+                <a href="https://ieeexplore.ieee.org/document/11012045" className="inline-link">
+                    13th International Symposium on Digital Forensics and Security
+                </a>.
+            </>
+        ),
+    },
+    {
+        place: "Guildford Grammar School",
+        title: "Western Australian Certificate of Education",
+        about: "Peer Support Leader, House Prefect (WB), 2016-2022 Honour Roll for Attitude and Excellence, Academic Honour Society, 1st Basketball, 1st Badminton, PSA/ACC Athlete, Harry Campbell Pope and Instrumental Scholarship (Piano) (2016)",
+    },
+];
 
 export const experienceData = [
     {
@@ -46,26 +65,6 @@ export const projectData = [
         githubUrl: "https://github.com/jet1e/ucp-a1",
     },
 ]
-
-export const educationData = [
-    {
-        place: "Curtin University",
-        title: "Bachelors of Advanced Science (Honours), Computing",
-        about: (
-            <>
-                Current CSIRO Next Generation Graduate Scholarship recipient researching privacy-preserving fall detection. Co-authored in the{" "}
-                <a href="https://ieeexplore.ieee.org/document/11012045" className="inline-link">
-                    13th International Symposium on Digital Forensics and Security
-                </a>.
-            </>
-        ),
-    },
-    {
-        place: "Guildford Grammar School",
-        title: "Western Australian Certificate of Education",
-        about: "Peer Support Leader, House Prefect (WB), 2016-2022 Honour Roll for Attitude and Excellence, Academic Honour Society, 1st Basketball, 1st Badminton, PSA/ACC Athlete, Harry Campbell Pope and Instrumental Scholarship (Piano) (2016)",
-    },
-];
 
 export const researchData = [
     {
