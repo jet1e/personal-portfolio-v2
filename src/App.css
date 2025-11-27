@@ -95,6 +95,7 @@ a.inline-link {
     height: 80px;
     border-radius: 0.75rem;
     object-fit: cover;
+    object-position: center 20%;
     border: 4px solid rgba(79, 189, 186, 0.3); 
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
 }
