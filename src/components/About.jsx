@@ -1,4 +1,6 @@
 import { educationData } from '../data';
+import TerminalCard from './TerminalCard';
+
 export default function About() {
     return(
         <section id="about" className="portfolio-section">
@@ -16,6 +18,9 @@ export default function About() {
             </div>
     
             <h3 className="section-title sub-title">Tech-Stack</h3>
+            <div className='tech-stack'>
+                <TerminalCard />
+            </div>
         </section>
         
     );

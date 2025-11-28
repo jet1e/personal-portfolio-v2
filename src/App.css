@@ -294,6 +294,63 @@ a.inline-link {
     color: var(--arcadian-dark);
 }
 
+/* About - Terminal Design */
+.terminal-window {
+    background-color: #282c34; /* Dark background for the terminal */
+    border-radius: 8px;
+    overflow: hidden; /* Ensures content doesn't spill out */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.terminal-header{
+    background-color: #3a3f4b;
+    padding: 8px;
+    display: flex;
+    align-items: center;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+.dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    margin-right: 8px;
+}
+
+.dot.red {
+    background-color: #ff5f56;
+}
+
+.dot.yellow {
+    background-color: #ffbd2e;
+}
+
+.dot.green {
+    background-color: #27c93f;
+}
+.terminal-content {
+    padding: 15px;
+    color: #abb2bf; 
+    font-family: 'Consolas', 'Monaco', 'Andale Mono', 'Ubuntu Mono', monospace;
+    font-size: 1em;
+    height: calc(100% - 36px); 
+}
+
+.terminal-user {
+    color: #61afef; 
+    /* color: var(--arcadian-primary); */
+}
+
+.terminal-cursor {
+    animation: blinker 1.5s linear infinite;
+}
+
+@keyframes blinker {
+    50% {
+            opacity: 0; /* Cursor disappears at 50% of the animation */
+        }
+}
+
 /* EXPERIENCE SECTION */
 .experience-list {
     margin-bottom: 2rem;
