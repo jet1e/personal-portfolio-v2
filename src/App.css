@@ -560,4 +560,50 @@ a.inline-link {
     font-size: 0.75rem; 
     color: var(--arcadian-secondary);
 }
+
 /* ALT SCREEN SIZE COMPATABILITY*/
+
+@media (max-width: 768px) {
+    body { 
+        width: 100%;
+        max-width: 100%;
+        overflow-x: hidden;
+    }
+
+    img {
+    max-width: 100%;
+    height: auto;
+    }   
+    
+    .card-container {
+        padding: 1rem;
+        border-radius: 1rem;
+    }
+
+    .tabs-nav {
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+    }
+
+    .tabs-nav::-webkit-scrollbar {
+        display: none;
+    }
+
+
+    .tabs-nav {
+        scrollbar-width: none;
+    }
+
+    .tabs-nav .tab-button {
+        flex: 0 0 auto;
+    }
+
+    body {
+        margin: 0;
+        min-height: 100vh;
+        display: block;        
+        min-width: 0;          
+        background: transparent;
+        color: inherit;
+    }
+}
