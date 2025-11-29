@@ -10,7 +10,6 @@ To run locally use ```npm run dev```.
 ## Features coming
 - Change theme
 - Background
-- BUG: Mobile tab animation breaks.
 
 ## Credits
 - Icons8
