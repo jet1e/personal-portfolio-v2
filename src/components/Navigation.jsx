@@ -21,15 +21,24 @@ export default function Navigation({ activeTab, onTabChange }) {
         const activeBtn = navRef.current.querySelector(`.tab-button[data-section="${activeTab}"]`);
 
         if (activeBtn) {
-            const navRect = navRef.current.getBoundingClientRect();
-            const btnRect = activeBtn.getBoundingClientRect();
-
-            const newLeft = btnRect.left - navRect.left
+            const newLeft = activeBtn.offsetLeft;
+            const newWidth = activeBtn.offsetWidth;
 
             setIndicatorStyle({
                 left: `${newLeft}px`,
-                width: `${btnRect.width}px`
+                width: `${newWidth}px`
             });
+            
+            // AUto scroll to centre
+            if (navRef.current) {
+                const scrollContainerWidth = navRef.current.offsetWidth;
+                const scrollPosition = newLeft - (scrollContainerWidth / 2) + (newWidth / 2);
+
+                navRef.current.scrollTo({
+                    left: scrollPosition,
+                    behavior: 'smooth'
+                });
+            }
         }
     }, [activeTab]);
 
