@@ -187,6 +187,12 @@ a.inline-link {
     color: var(--arcadian-dark);
 }
 
+/* Chrome black border remove */
+.tab-button:focus {
+  outline: none; 
+}
+
+
 .tab-indicator {
     position: absolute;
     bottom: -1px;
