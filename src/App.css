@@ -633,25 +633,3 @@ a.inline-link {
         color: inherit;
     }
 }
-
-@media (max-width: 768px) and (prefers-color-scheme: dark) {
-  /* Keep arcadian dark on mobile dark mode */
-  .projects-card .project-folder-icon,
-  .projects-card .project-title,
-  .projects-card .project-desc,
-  .main-footer .contact-info {
-    color: var(--arcadian-dark) !important;
-  }
-
-  /* If text is inside links, force them too */
-  .projects-card a,
-  .main-footer a {
-    color: var(--arcadian-dark) !important;
-  }
-
-  /* SVG icons inherit text color */
-  .project-folder-icon svg {
-    fill: currentColor;
-    stroke: currentColor;
-  }
-}
