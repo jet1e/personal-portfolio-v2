@@ -633,3 +633,17 @@ a.inline-link {
         color: inherit;
     }
 }
+
+@media (max-width: 768px) and (prefers-color-scheme: dark) {
+  .project-folder-icon,
+  .project-desc,
+  .contact-info,
+  .project-title {
+    color: var(--arcadian-dark) !important;
+  }
+
+  .project-folder-icon svg {
+    fill: currentColor;
+    stroke: currentColor;
+  }
+}
