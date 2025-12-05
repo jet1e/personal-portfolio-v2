@@ -48,21 +48,35 @@ export const experienceData = [
 export const projectData = [
     {
         title: "Connect Four",
-        description: "Group project creating a fullstack application with turn-based and AI modes. Progress is saved via Firebase.",
+        description: "Group project creating an Android full-stack variation of 'Connect 4' using Kotlin and Jetpack Compose. This app sees; multiple gamemodes, user personalisation, stat tracking, real-time in-game information, responsive UI, state preservation, and modular system design. This project uses firebase to handle cloud-based data storage and synchronisation.",
         tag: "Kotlin",
         githubUrl: "https://github.com/jet1e/ConnectFourApp", // Replace with actual link
     },
     {
         title: "Sudoku Solution Validator",
-        description: "Multithreaded solution validator for n x n grid.",
+        description: "A multi-threaded sudoku validator in C that spawns child processes to concurrently verifying parts of the grid. The program reads a solution file and, optionally, a delay parameter to control processing speed in a make-based build environment. Originally this was developed for my Operating Systems coursework (97.5%).",
         tag: "C89",
         githubUrl: "https://github.com/jet1e/Multithreaded_SSV",
     },
     {
         title: "Crossy Road Terminal Game",
-        description: "Turn-based cross the road game using w,a,s,d.",
+        description: "A turn-based 2D terminal game in C modelling gameplay similar to crossing-the-road games: the player moves across a grid of rows and columns, attempting to reach a goal marked 'G', while avoiding moving obstacles (cars) that shift position each turn.",
         tag: "C89",
         githubUrl: "https://github.com/jet1e/ucp-a1",
+    },
+        {
+        title: "Personal Portfolio Website v1",
+        description: (
+            <>
+                This is my mock-up website design done in HTML, CSS and Javascript. You can visit it {" "}
+                <a href="jet-portfolio-v1.netlify.app" className="inline-link">
+                    here 
+                </a>
+                !{" "}Later I pivoted in creating this website using React and Vite!".
+            </>
+        ),
+        tag: "HTML/CSS/JS",
+        githubUrl: "https://github.com/jet1e/personal-website-v1",
     },
 ]
 
