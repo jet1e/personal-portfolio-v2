@@ -54,7 +54,7 @@ export const projectData = [
     },
     {
         title: "Sudoku Solution Validator",
-        description: "A multi-threaded sudoku validator in C that spawns child processes to concurrently verifying parts of the grid. The program reads a solution file and, optionally, a delay parameter to control processing speed in a make-based build environment. Originally this was developed for my Operating Systems coursework (97.5%).",
+        description: "A multi-threaded sudoku validator in C that spawns child processes to concurrently verifying parts of the grid. The program reads a solution file and, optionally, a delay parameter to control processing speed in a make-based build environment. Originally this was developed for my Operating Systems coursework (Grade: 97.5%).",
         tag: "C89",
         githubUrl: "https://github.com/jet1e/Multithreaded_SSV",
     },
@@ -72,7 +72,7 @@ export const projectData = [
                 <a href="jet-portfolio-v1.netlify.app" className="inline-link">
                     here 
                 </a>
-                !{" "}Later I pivoted in creating this website using React and Vite!".
+                !{" "}Later I pivoted in creating this website using React and Vite.
             </>
         ),
         tag: "HTML/CSS/JS",
