@@ -636,15 +636,13 @@ a.inline-link {
     }
 }
 
-/* Prevent WebKit/Safari from inverting text colors in Dark Mode */
+/* Prevent webkit inverting colour on dark mode */
 body,
 .nav-links a,
 .section-about h2,
 .section-about h3,
 .section-about p,
 footer p {
-  /* This is the key property for WebKit (Safari/iOS) */
   -webkit-text-fill-color: initial; 
-  /* Fallback for other potential dark mode issues, though less common for this specific problem */
   color-scheme: light; 
 }
