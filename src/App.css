@@ -415,7 +415,8 @@ a.inline-link {
 }
 
 .job-desc {
-    font-size: 0.75rem;
+    font-size: 0.875rem; 
+    font-weight: 100;
     color: var(--arcadian-secondary);
     margin-top: 0.5rem;
 }
@@ -462,9 +463,10 @@ a.inline-link {
     color: var(--arcadian-dark);
 }
 
-.project-desc {
-    font-size: 0.875rem;
-    color: var(--arcadian-secondary);
+.project-description {
+    font-size: 0.875rem; 
+    font-weight: 100;
+    color: var(--arcadian-dark);
     margin-top: 0.25rem;
 }
 
@@ -535,7 +537,8 @@ a.inline-link {
 }
 
 .research-desc {
-    font-size: 0.9rem;
+    font-size: 0.875rem; 
+    font-weight: 100;
     color: var(--arcadian-secondary);
     margin-top: 0.5rem;
 }
