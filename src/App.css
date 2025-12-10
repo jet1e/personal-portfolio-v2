@@ -646,6 +646,7 @@ body,
 .section-about h2,
 .section-about h3,
 .section-about p,
+.contact-info,
 footer p {
   -webkit-text-fill-color: initial; 
   color-scheme: light; 
